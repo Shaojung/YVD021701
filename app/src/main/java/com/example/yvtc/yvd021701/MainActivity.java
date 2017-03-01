@@ -1,8 +1,10 @@
 package com.example.yvtc.yvd021701;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -13,6 +15,12 @@ public class MainActivity extends AppCompatActivity {
         Log.d("LEARN", "onCreate()");
         // This is a test.
 
+    }
+
+    public void click1(View v)
+    {
+        Intent it = new Intent(MainActivity.this, Main2Activity.class);
+        startActivity(it);
     }
 
     @Override
